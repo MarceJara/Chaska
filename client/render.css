@@ -1,0 +1,86 @@
+.all{
+    display: flex;
+    position: relative;
+}
+
+.render-c{
+    position: relative;
+    width: 1000px;
+    height: 750px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.conteiner{
+    margin: 15px;
+    display: flex;
+}
+
+.cont-cartas{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.carta{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.carta-g{
+    position: relative;
+    width: 240px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    backdrop-filter: blur(10px);    
+}
+
+.datas{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+i{
+    margin-right: 5px;
+}
+
+.sensor{
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

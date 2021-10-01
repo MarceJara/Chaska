@@ -1,0 +1,76 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <!-- Boxicons CND Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaska-GRP</title>
+</head>
+<body>
+    <div class="navbar">
+        <i class='bx bx-menu' id="btn" onclick="openNav()"></i>
+        <div class="chaskalogo"><img src="img/chaskalogo.png" alt="CHASKA NASA"></div>
+    </div>
+    <div class="sidebar" id="mySidebar">
+        <div class="equis">
+            <i class='bx bx-x' id="btnx" onclick="closeNav()"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="./index.html">
+                    <i class='bx bxs-home' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="./news.html">
+                    <i class='bx bxs-news' ></i>
+                    <span class="links_name">News</span>
+                </a>
+            </li>
+            <li>
+                <a href="./dashboard.html">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="./render.html">
+                    <i class='bx bx-shape-triangle'></i>
+                    <span class="links_name">Render</span>
+                </a>
+            </li>
+            <li>
+                <a href="./team.html">
+                    <i class='bx bxs-group' ></i>
+                    <span class="links_name">Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    <i class='bx bxs-message-detail' ></i>
+                    <span class="links_name">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h1>News</h1>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+</body>
+</html>
