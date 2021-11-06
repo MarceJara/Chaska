@@ -6,7 +6,10 @@
     <!-- Boxicons CND Link -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src=".\conection.js"></script>
+    <script defer type="text/javascript" src=".\site.js"></script>
     <title>Chaska-GRP</title>
+
 </head>
 <body>
     <div class="navbar">
@@ -98,8 +101,28 @@
         <script type="module" src="render.js"></script>
     </div>
 
-    <button id="connectButton">Connect via Serial Port</button>
+    <button id="connectionButton">Connect via Serial Port</button>
     <div id="target"></div>
+
+    <div class="connect">
+        <form action="#" method="POST" onsubmit="connect(); return false;">
+            <label for="baud">Baud Rate:</label>
+            <select name="baud">
+                <option value="4800">4800</option>
+                <option value="9600">9600</option>
+                <option value="19200">19200</option>
+                <option value="38400">38400</option>
+                <option value="57600">57600</option>
+                <option value="115200">115200</option>
+            </select>
+            <button type="button" onclick="autoDetectBaudRate()">Auto-Detect</button>
+            <input type="submit" value="Connect">
+        </form>
+    </div>
+    <br />
+    <div class="log">
+        <textarea readonly="true" style="min-height:500px; min-width: 500px"></textarea>
+    </div>
 
     <script>
         function openNav() {
